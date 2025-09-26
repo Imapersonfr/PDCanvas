@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Drawing Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <h1 class="title">Professional Drawing Canvas</h1>
+            <div class="color-picker">
+                <h3>Colors</h3>
+                <div class="color-options">
+                    <div class="color-option active" data-color="#000000" style="background-color: #000000;"></div>
+                    <div class="color-option" data-color="#FF0000" style="background-color: #FF0000;"></div>
+                    <div class="color-option" data-color="#00FF00" style="background-color: #00FF00;"></div>
+                    <div class="color-option" data-color="#0000FF" style="background-color: #0000FF;"></div>
+                    <div class="color-option" data-color="#FFFF00" style="background-color: #FFFF00;"></div>
+                    <div class="color-option" data-color="#FF00FF" style="background-color: #FF00FF;"></div>
+                    <div class="color-option" data-color="#00FFFF" style="background-color: #00FFFF;"></div>
+                    <div class="color-option" data-color="#FFFFFF" style="background-color: #FFFFFF; border: 1px solid #ccc;"></div>
+                    <div class="color-option" data-color="#FFA500" style="background-color: #FFA500;"></div>
+                    <div class="color-option" data-color="#800080" style="background-color: #800080;"></div>
+                    <div class="color-option" data-color="#FFC0CB" style="background-color: #FFC0CB;"></div>
+                    <div class="color-option" data-color="#A52A2A" style="background-color: #A52A2A;"></div>
+                </div>
+                <div class="custom-color">
+                    <input type="color" id="customColor" value="#000000">
+                    <label for="customColor">Custom Color</label>
+                </div>
+            </div>
+            <div class="brush-size">
+                <h3>Brush Size</h3>
+                <div class="size-options">
+                    <div class="size-option active" data-size="2">Small</div>
+                    <div class="size-option" data-size="5">Medium</div>
+                    <div class="size-option" data-size="10">Large</div>
+                    <div class="size-option" data-size="20">X-Large</div>
+                </div>
+            </div>
+            <button class="clear-btn" id="clearBtn">Clear Canvas</button>
+        </div>
+        <div class="canvas-container">
+            <canvas id="myCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
